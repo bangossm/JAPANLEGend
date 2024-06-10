@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="am">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divice-width, initial-scale=1">
+    <head>
+        <style>
+body{
+    background-image: url(фоооон.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+.container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.689);
+}
+
+h1 {
+    margin-top: 10px;
+    font-size: 40px;
+  text-align: center;
+  color: #d6269c;
+  font-weight: bolder;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  margin-right: 10px;
+
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+}
+
+input[type="submit"] {
+  width: auto;
+  padding: 15px 27px;
+  background: #d6269c;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  font-style: italic;
+  color:white;
+  cursor: pointer;
+}
+h2{
+    color: white;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.button {
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #d6269c;
+  color: #ffffffef;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: transform 0.3s;
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  top: 90%;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-color: #b90b7fe1;
+  transform-style: preserve-3d;
+  transform: rotateX(-90deg);
+  transition: transform 0.3s;
+}
+
+.button:hover {
+  transform: translate(0, -5px);
+}
+
+.button:hover:before {
+  transform: rotateX(0);
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.menu-btn {
+  position: fixed;
+  top: 40px;
+  left: 20px;
+  width: 40px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.menu-btn__burger, .menu-btn__burger::before, .menu-btn__burger::after {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 4px;
+  background-color: #d6269c;
+}
+
+.menu-btn__burger::before {
+  top: -10px;
+
+}
+
+.menu-btn__burger::after {
+  top: 10px;
+
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -200px;
+  width: 200px;
+  height: 100%;
+  background-color:#2c2c2c;
+  transition: left 0.3s ease;
+  z-index: 9998;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 60px 0;
+}
+
+.sidebar ul li {
+  padding: 19px;
+}
+
+.sidebar ul li a {
+  font-weight: bolder;
+  color: #d6269c;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.show-sidebar {
+  left: 0;
+}
+
+
+
+            </style>
+            </head>
+            <body>
+
+              <div class="menu-btn">
+                <div class="menu-btn__burger"></div>
+              </div>
+            
+              <div class="sidebar">
+                <nav>
+                  <ul>
+                    <li><a href="Начало.html">Главная</a></li>
+                    <li><a href="Главная.html">О нас</a></li>
+                    <li><a href="Каталог.html">Каталог</a></li>
+                    <li><a href="trade-in.html">trade-in</a></li>
+                    <li><a href="Связь.html">Связь</a></li>
+                  </ul>
+                </nav>
+              </div>
+            
+              <script src="script.js"></script>
+            
+               
+
+               
+                <div class="container">
+                    <h1>Регистрация Trade-In</h1>
+                    <form>
+                        <h2>
+                      <div class="form-group">
+                        <label for="fullname">Введите ваше ФИО:</label>
+                        <input type="text" id="fullname" name="fullname" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="phone">Телефон:</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="car">Марка и модель автомобиля:</label>
+                        <input type="text" id="car" name="car" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="year">Год выпуска:</label>
+                        <input type="number" id="year" name="year" min="1900" max="2023" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="condition">Состояние автомобиля:</label>
+                        <select id="condition" name="condition" required>
+
+                        </h2>
+                          <option value="">Выберите состояние</option>
+                          <option value="excellent">Отличное</option>
+                          <option value="good">Хорошее</option>
+                          <option value="fair">Удовлетворительное</option>
+                          <option value="poor">Плохое</option>
+                        </select>
+                      </div> 
+                      <center>
+                      <button class="button">
+                        <input type="submit" value="Зарегистрироваться"></center></button>
+                      </div>
+                    </form>
+                  </div>
+          
+            </body>
+            </html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="am">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divice-width, initial-scale=1">
+    <head>
+        <style>
+body{
+    background-image: url(фоооон.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+.box1 {  
+             background: #131313;
+             width: 80%;
+             height: 1000px ;
+             border: 20px solid #4d4d4dc2; /* Параметры рамки */
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+h1{
+    font-size: 100px;
+    color: #d6269c;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+h2{
+    color: #d6269c;
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+h3{
+    color:white;
+    font-size: 15px;
+
+}
+p{
+    color: white;
+  
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.menu-btn {
+  position: fixed;
+  top: 40px;
+  left: 20px;
+  width: 40px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.menu-btn__burger, .menu-btn__burger::before, .menu-btn__burger::after {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 4px;
+  background-color: #d6269c;
+}
+
+.menu-btn__burger::before {
+  top: -10px;
+
+}
+
+.menu-btn__burger::after {
+  top: 10px;
+
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -200px;
+  width: 200px;
+  height: 100%;
+  background-color:#2c2c2c;
+  transition: left 0.3s ease;
+  z-index: 9998;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 60px 0;
+}
+
+.sidebar ul li {
+  padding: 19px;
+}
+
+.sidebar ul li a {
+  font-weight: bolder;
+  color: #d6269c;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.show-sidebar {
+  left: 0;
+}
+
+
+
+</style>
+</head>
+<body>
+
+
+    <div class="menu-btn">
+        <div class="menu-btn__burger"></div>
+      </div>
+    
+      <div class="sidebar">
+        <nav>
+          <ul>
+            <li><a href="Начало.html">Главная</a></li>
+            <li><a href="Главная.html">О нас</a></li>
+            <li><a href="Каталог.html">Каталог</a></li>
+            <li><a href="trade-in.html">trade-in</a></li>
+            <li><a href="Связь.html">Связь</a></li>
+          </ul>
+        </nav>
+      </div>
+    
+      <script src="script.js"></script>
+    
+
+  <center>
+    <div class="box1">
+<h1>Контакты</h1>
+<h2>***</h2>
+<h2>Наши контактные данные:</h2>
+<p>Адрес: 089218, Ленинградская область, город Дорохово, бульвар Ломоносова, 51</p>
+<p>Телефон: 795-22-77</p>
+<p>Email: leginfo@mail.ru</p>
+<p>График работы: понедельник-пятница, 9:00-22:00</p>
+<p>               суббота-воскресенье, 9:00-20:00</p>
+
+<h2>Мы на карте:</h2>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d00000.0000000000!2d00.000000!3d00.000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x0000000000000000!2sExample%20Location!5e0!3m2!1sen!2sus!4v0000000000000" width="900" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+
+</center>
+</div>
+</body>
+</html>

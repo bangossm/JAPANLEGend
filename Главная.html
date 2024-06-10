@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="am">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divice-width, initial-scale=1">
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <style>
+body{
+    background-image: url(фоооон.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+.box1 {  
+             background: #131313;
+             width: 80%;
+             height: 890px ;
+             border: 20px solid #4d4d4dc2; /* Параметры рамки */
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+h1{
+    font-size: 100px;
+    color: #d6269c;
+    font-weight: bolder;
+    font-style: italic;
+    line-height: 10%;
+}
+h2{
+    font-size: 20px;
+    font-style: normal;
+    color: rgba(217, 217, 217, 0.874);
+    margin-left: 10px;
+    text-align: left;
+    line-height: 29px;
+}
+h3{
+  color: #d6269c;
+  font-style: normal;
+  font-size: 40px;
+  text-align: center;
+}
+p{
+    font-style: italic;
+    font-size: 20px;
+    color: #d6269c;
+    line-height: 20%;
+    font-weight: 500;
+
+}
+.button {
+  display: inline-block;
+  padding: 20px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #d6269c;
+  color: #ffffffef;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: transform 0.3s;
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  top: 90%;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-color: #b90b7fe1;
+  transform-style: preserve-3d;
+  transform: rotateX(-90deg);
+  transition: transform 0.3s;
+}
+
+.button:hover {
+  transform: translate(0, -5px);
+}
+
+.button:hover:before {
+  transform: rotateX(0);
+}
+a{
+    color: rgba(255, 255, 255, 0.922);
+    font-size: 20px;
+    font-weight: bold;
+}
+a:link,
+a:visited{
+text-decoration: none;
+}
+a:hover,
+a:active{
+    text-decoration: none;
+}
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: sans-serif;
+    line-height: 1.6;
+    background: radial-gradient(
+        ellipse at top center,
+        #310038 0%,
+        #000000 100%
+    );
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.scroller {
+    box-shadow:0 0 20px #d6269c;
+    background-color: rgba(0, 0, 0, 0.76);
+    overflow: auto;
+    padding: 1rem;
+    scroll-timeline-name: --scroller;
+    scroll-timeline-axis: inline;
+}
+
+
+ol,
+ul {
+    //   display: grid;
+    //   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    // grid-gap: 1rem;
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding-left: 0;
+    counter-reset: list-item;
+    perspective: 9000px;
+    transform-style: preserve-3d;
+    perspective-origin: 50% 50%;
+
+    > li {
+        flex: 1 1 240px;
+        min-width: 240px;
+        border: 1px solid currentColor;
+        padding: 1rem;
+        animation: auto ease-in-out intro forwards,
+            auto ease-in-out outro forwards;
+        animation-timeline: view(inline);
+        animation-range: entry, exit;
+        transform-origin: bottom center;
+    }
+
+    p,
+    h3 {
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+
+    h3 {
+        color: #aaa;
+        font-weight: normal;
+    }
+}
+
+ol > li {
+    display: flex;
+    flex-direction: column;
+    color: #ccc;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        counter-increment: list-item;
+        content: counter(list-item) ".";
+        font-size: 5em;
+        font-weight: bold;
+        color: #fff;
+        margin-bottom: 1rem;
+        line-height: 1;
+    }
+
+    &::after {
+        content: "";
+        background-image: var(--bg);
+        position: absolute;
+        inset: -20px;
+        background-size: cover;
+        transform: scale(1);
+        transition: transform 0.5s ease-out, opacity 0.4s linear;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    &:hover {
+        color: #fff;
+        &::after {
+            transform: scale(1.1) rotate(4deg);
+            opacity: 0.8;
+        }
+    }
+}
+
+// Play with the intro and outro animations!
+
+@keyframes intro {
+    from {
+        transform-origin: center left;
+        opacity: 0;
+        scale: 0;
+        // rotate: z -90deg;
+        // translate: 0 -100%;
+    }
+    to {
+        transform-origin: center left;
+        opacity: 1;
+        scale: 1;
+        // rotate: z 0deg;
+        // translate: 0 0;
+    }
+}
+
+@keyframes outro {
+    from {
+        transform-origin: center right;
+        opacity: 1;
+        scale: 1;
+        // translate: 0 0;
+    }
+    to {
+        transform-origin: center right;
+        opacity: 0;
+        scale: 0;
+        // translate: 0 100%;
+    }
+}
+
+
+
+            </style>
+            </head>
+            <body>
+                
+                
+                <center>
+                <div class="box1">
+<h1>ИНФОРМАЦИЯ</h1>
+<p>"Когда у тебя есть машина, у тебя появляется больше комфорта. Или драйва. Решать – тебе."</p>
+<h2>
+    Автосалон японских автомобилей является идеальным местом для любителей автомобильной индустрии. Внутри этого автосалона каждый посетитель погружается в мир японских автомобилей, восхищаясь их инновационными технологиями, стилем и качеством.
+        
+    Японские автомобили славятся своей надежностью, эффективностью и экономичностью, и это является одним из основных преимуществ, которым они обладают перед автомобилями других стран. В автосалоне вы сможете оценить все эти преимущества, рассмотрев автомобили внимательно и сравнивая характеристики.
+    
+    Кроме того, японские автомобили известны своей передовой технологией. Вы сможете почувствовать комфорт и удобство сидений, оценить ходовые характеристики и интерфейс, а также ощутить мощность двигателя во время тест-драйва.
+    
+    Автосалон японских автомобилей - это место, где вы сможете найти автомобиль своей мечты, получить информацию о его характеристиках, ценах и условиях покупки. Будь то городской автомобиль, семейный вариант или спортивная модель, вы обязательно найдете то, что ищете в этом разнообразном автосалоне.</h2>
+<button class="button">
+    <a href="Каталог.html" alt="Каталог.html">К ВЫБОРУ АВТО</a>
+</button>
+
+<div class="scroller">
+  <ol>
+      <li style="--bg: url(https://avatars.mds.yandex.net/i?id=74a23ab91a9de085931651e9be7e84f7cbca2e91-9036108-images-thumbs&n=13)">
+          <h3>Nissan</h3>
+          <p></p>
+      </li>
+      <li style="--bg: url(https://i.pinimg.com/736x/ed/2f/c0/ed2fc0fe2ecf3109482cc5c983ae0bb6.jpg)">
+          <h3>Toyota</h3>
+          <p></p>
+      </li>
+      <li style="--bg: url(https://i.pinimg.com/originals/cc/1a/df/cc1adfdaa0c91e7619b7b57af5658cb8.jpg)">
+          <h3>Honda</h3>
+          <p></p>
+      </li>
+      <li style="--bg: url(https://sun9-6.userapi.com/impg/8_4Er_MUMbkJh301glj1ZwazO77JVzYMoKD5PQ/zLGk5vKxR2c.jpg?size=1080x1080&quality=96&sign=bf64ded032123e240c988094516cbc4c&c_uniq_tag=qSsmxHFxEMydrkmL4dlQRB6qhxdgk6NlGKfm0s_40Nc&type=album)">
+          <h3>Acura</h3>
+          <p></p>
+      </li>
+      <li style="--bg: url(https://i.pinimg.com/originals/97/04/f4/9704f4b1834100fab852877380c2ccdc.jpg)">
+          <h3>Subaru</h3>
+          <p></p>
+      </li>
+      
+      
+  </ol>
+</div>
+
+
+        </center>
+        </body>
+            </html>

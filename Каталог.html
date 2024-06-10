@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="am">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divice-width, initial-scale=1">
+    <head>
+      
+        
+        <style>
+body{
+    background-image: url(фоооон.jpg);
+   
+    backdrop-filter: blur(5px);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+
+}
+a{ text-align: center;
+  color: #d6269c;
+  font-weight: bolder;
+  font-size: 25px;
+ line-height: 40px;
+ 
+
+}
+.catalog-row {
+    display: flex;
+   
+}
+        
+.product {
+     flex-basis: 33.33%;
+     padding: 10px;
+     width: 300px;
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid #d6269c;
+  border-radius: 5px;
+  background-color:rgba(0, 0, 0, 0.689);
+}
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product h3 {
+  margin-top: 10px;
+}
+
+.product p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.product span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+span{
+  color: #cfbeca;
+  font-size: 30px;
+  text-align: center;
+}
+h1{
+  color: black;
+  font-size: 109px;
+  font-weight: bolder;
+  margin-top: 10px;
+  text-align: center;
+  
+}
+h2{
+  color: #d6269c;
+  font-size: 100px;
+  font-weight: bolder;
+  margin-top: 0px;
+  text-align: center;
+  
+}
+a:link,
+a:visited{
+text-decoration: none;
+}
+a:hover,
+a:active{
+    text-decoration: none;
+}
+.container {
+  position: relative;
+}
+
+.stripe {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.689);
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.menu-btn {
+  position: fixed;
+  top: 40px;
+  left: 20px;
+  width: 40px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.menu-btn__burger, .menu-btn__burger::before, .menu-btn__burger::after {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 4px;
+  background-color: #d6269c;
+}
+
+.menu-btn__burger::before {
+  top: -10px;
+
+}
+
+.menu-btn__burger::after {
+  top: 10px;
+
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -200px;
+  width: 200px;
+  height: 100%;
+  background-color:#2c2c2c;
+  transition: left 0.3s ease;
+  z-index: 9998;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 60px 0;
+}
+
+.sidebar ul li {
+  padding: 19px;
+}
+
+.sidebar ul li a {
+  font-weight: bolder;
+  color: #d6269c;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.show-sidebar {
+  left: 0;
+}
+
+
+
+</style>
+</head>
+<body> 
+
+
+  <div class="menu-btn">
+    <div class="menu-btn__burger"></div>
+  </div>
+
+  <div class="sidebar">
+    <nav>
+      <ul>
+        <li><a href="Начало.html">Главная</a></li>
+        <li><a href="Главная.html">О нас</a></li>
+        <li><a href="Каталог.html">Каталог</a></li>
+        <li><a href="trade-in.html">trade-in</a></li>
+        <li><a href="Связь.html">Связь</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <script src="script.js"></script>
+
+
+  
+  <div class="container">
+    <p>
+      <center><h1>Каталог</h1></center>
+    </p>
+    <div class="stripe"><h2>Каталог</h2></div>
+  </div>
+   
+   
+
+
+<div class="catalog">
+  <div class="catalog-row">
+      <div class="product">
+        <img src="BRZ.jpg">
+        <a href="https://auto.ru/cars/used/sale/subaru/brz/1120233994-049c9ac3/">Subaru BRZ</a></h3>
+        <span>3 500 000 р.</span>
+      </div>
+     
+      <div class="product">
+        <img src="TYPE R.jpg">
+        <a href="https://auto.ru/cars/used/sale/honda/civic_type_r/1119967692-d240fb6f/">Honda TYPE R</a>
+  
+        <span>4 000 000 р.</span>
+      </div>
+      <div class="product">
+        <img src="ACURA NSX.jpg">
+        <a href="https://electrodrivemoscow.ru/hybrid-cars/acura_nsx/">Acura NSX</a>
+        
+        <span>31 220 000 р.</span>
+      </div>
+</div>
+  <div class="catalog-row">
+      <div class="product">
+        <img src="WRX.jpg">
+      <a href="https://tokito-auto.ru/cars/japan/ykA8n1RwdcxfI">Subaru WRX STI</a>
+   
+      <span>1 500 000 р.</span>
+    </div>
+      <div class="product">
+        <img src="GTR R35.jpg">
+      <a href="https://auto.drom.ru/moscow/nissan/gt-r/52467942.html">Nissan GTR R35</a>
+  
+      <span>8 000 000 р.</span>
+    </div>
+      <div class="product">
+        <img src="SKY R34.jpeg">
+        <a href="https://auto.ru/cars/used/sale/nissan/skyline/1119827621-5e086f06/">Nissan Skyline GTR R34</a>
+        
+        <span>950 000 р.</span>
+      </div>
+</div>
+      <div class="catalog-row">
+        <div class="product">
+          <img src="CHASER.jpg">
+        <a href="https://auto.ru/cars/used/sale/toyota/chaser/1100231372-196d7415/">Toyota CHASER</a>
+     
+        <span>2 200 000 р.</span>
+      </div>
+      
+      <div class="product">
+        <img src="MARK 2100.jpg">
+        <a href="https://auto.ru/cars/used/sale/toyota/mark_ii/1119972801-f080903d/?geo_id=10174">Toyota MARK2 X100</a>
+
+        <span>500 000 р.</span>
+      </div>
+      <div class="product">
+        <img src="CELICA.jpg">
+        <a href="https://auto.ru/cars/used/sale/toyota/celica/1120279418-9fcfde06/">Toyota Celica 2001</a>
+       
+        <span>650 000 р.</span>  
+      </div>
+     
+</div>
+  <div class="catalog-row">
+    <div class="product">
+      <img src="370Z.jpg">
+    <a href="https://auto.ru/cars/used/sale/nissan/370z/1120279297-35c3a70b/">Nissan 370Z</a>
+ 
+    <span>3 000 000 р.</span>
+  </div>
+  
+  <div class="product">
+    <img src="SUPRA.jpg">
+    <a href="https://auto.ru/cars/used/sale/toyota/supra/1116057450-4c6b6858/?geo_id=10174">Toyota Supra MK4</a>
+
+    <span>3 500 000 р.</span>
+  </div>
+  <div class="product">
+    <img src="180SX.jpg">
+    <a href="https://auto.ru/cars/used/sale/nissan/180sx/1119026363-29b7dd1c/">Honda 180SX</a>
+    
+    <span>900 000 р.</span>
+  </div>
+</div>
+</div>
+
+
+  
+</div>
+
+</body>
+</html>
